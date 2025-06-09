@@ -41,7 +41,6 @@ webapp/
 │           └── cadastroUsuario.php
 ├── index.php
 ├── README.md
-└── DOC/
 ```
 
 ✅ Funcionalidades
