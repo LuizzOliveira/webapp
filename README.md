@@ -4,9 +4,13 @@ Este projeto é um sistema web básico desenvolvido em PHP utilizando o padrão 
 
 ---
 
+---
+
 ## 📁 Estrutura do Projeto
 
+```
 webapp/
+│
 ├── App/
 │   ├── config/
 │   │   └── database.php
@@ -36,11 +40,11 @@ webapp/
 │       └── pages/
 │           └── cadastroUsuario.php
 ├── index.php
-└── README.md/
+├── README.md
+└── DOC/
+```
 
----
-
-## ✅ Funcionalidades
+✅ Funcionalidades
 
 - 📋 Cadastro de Usuários
 - 📤 Upload de Imagens
@@ -87,7 +91,6 @@ http://localhost/webapp/App/view/pages/index.php
 ```
 
 ---
-
 
 ## 📄 Licença
 
