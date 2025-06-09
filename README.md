@@ -86,7 +86,7 @@ git clone https://github.com/seuusuario/webapp.git
 5. **Acessar via navegador:**
 
 ```bash
-http://localhost/webapp/App/view/pages/index.php
+http://[localhost/webapp/App/index.php](http://localhost/webapp/App/index.php)
 ```
 
 ---
