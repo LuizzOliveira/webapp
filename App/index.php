@@ -69,5 +69,4 @@ $emptyPage = (count($imagens) === 0);
     <script src="view/assets/js/main.js"></script>
 
 </body>
-
 </html>

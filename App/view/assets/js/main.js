@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
         msgs.forEach(msg => {
             msg.style.transition = 'opacity 0.5s ease';
             msg.style.opacity = '0';
-            setTimeout(() => msg.style.display = 'none', 500); // Espera o fade out
+            setTimeout(() => msg.style.display = 'none', 500);
         });
     }, 3000);
 
@@ -54,7 +54,7 @@ window.validarSenhas = function() {
 
     if (senha !== confirmaSenha) {
         alert('As senhas não coincidem. Por favor, tente novamente.');
-        return false; // Impede o envio do formulário
+        return false; 
     }
     return true;
 };

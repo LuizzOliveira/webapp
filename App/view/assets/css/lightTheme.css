@@ -1,5 +1,4 @@
 :root {
-  /* Cores principais */
   --color-primary: #4a90e2;
   --color-primary-dark: #357abd;
   --color-success-bg: #daf5d7;
@@ -15,7 +14,6 @@
   --color-input-border: #ccc;
   --color-input-focus: var(--color-primary);
 
-  /* Tipografia e layout */
   --font-family: 'Work Sans', sans-serif;
   --font-size-base: 14px;
   --radius-base: 6px;

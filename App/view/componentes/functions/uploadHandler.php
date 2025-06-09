@@ -1,6 +1,4 @@
 <?php 
-
-
 function handleUpload(array $files, array $post, $usuarioModel, $imagemModel, $pdo) {
     if (!isset($files['foto'], $post['nome_usuario'])) return;
 
