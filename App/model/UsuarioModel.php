@@ -37,8 +37,8 @@ class UsuarioModel {
 
 
     public function buscarTodosUsuarios()
-{
-    $stmt = $this->pdo->query("SELECT id, nome, email FROM usuarios");
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
+    {
+        $stmt = $this->pdo->query("SELECT id, nome, email FROM usuarios");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

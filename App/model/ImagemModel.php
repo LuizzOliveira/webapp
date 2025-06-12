@@ -104,4 +104,25 @@ class ImagemModel {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function buscarImagemPorUsuarioId($usuarioId) {
+        $stmt = $this->pdo->prepare("
+            SELECT i.* FROM imagens i
+            INNER JOIN usuario_imagem ui ON i.id = ui.imagem_id
+            WHERE ui.usuario_id = :usuario_id
+            ORDER BY i.id DESC LIMIT 1
+        ");
+        $stmt->execute([':usuario_id' => $usuarioId]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function excluirImagemPorUsuarioId($usuarioId) {
+        $stmt = $this->pdo->prepare("DELETE i FROM imagens i
+            JOIN usuario_imagem ui ON ui.imagem_id = i.id
+            WHERE ui.usuario_id = ?");
+        $stmt->execute([$usuarioId]);
+    
+        $stmt = $this->pdo->prepare("DELETE FROM usuario_imagem WHERE usuario_id = ?");
+        $stmt->execute([$usuarioId]);
+    }
+
 }

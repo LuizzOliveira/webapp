@@ -10,7 +10,6 @@ require_once __DIR__ . '/../componentes/functions/userRegistrationHandler.php';
 $pdo = Database::conectar();
 $usuarioModel = new UsuarioModel($pdo);
 
-// Handle registration
 $message = handleUserRegistration($_POST, $usuarioModel);
 
 ?>

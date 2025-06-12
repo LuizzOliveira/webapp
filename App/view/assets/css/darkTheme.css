@@ -1,25 +1,24 @@
 :root { 
-  /* Dark Theme */
   --color-primary: #427bbb;
   --color-primary-dark: #357abd;
 
-  --color-success-bg: #274627;      /* verde escuro suave */
-  --color-success-border: #4caf50;  /* verde claro para borda */
-  --color-success-text: #a5d6a7;    /* verde claro para texto */
+  --color-success-bg: #274627;     
+  --color-success-border: #4caf50;  
+  --color-success-text: #a5d6a7;    
 
-  --color-error-bg: #5a1e1e;        /* vermelho escuro */
-  --color-error-border: #d32f2f;    /* vermelho vibrante */
-  --color-error-text: #ef9a9a;      /* vermelho claro */
+  --color-error-bg: #5a1e1e;        
+  --color-error-border: #d32f2f;    
+  --color-error-text: #ef9a9a;      
 
-  --color-bg: #121212;              /* fundo bem escuro */
-  --color-text: #e0e0e0;            /* texto claro */
-  --color-white: #1e1e1e;           /* cor para fundo de caixas (quase preto) */
-  --color-border: #333;             /* bordas escuras */
+  --color-bg: #121212;              
+  --color-text: #e0e0e0;            
+  --color-white: #1e1e1e;           
+  --color-border: #333;             
 
   --color-input-border: #555;
   --color-input-focus: var(--color-primary);
 
-  /* Tipografia e layout */
+  
   --font-family: 'Work Sans', sans-serif;
   --font-size-base: 12px;
   --radius-base: 6px;
@@ -45,6 +44,7 @@ body{
   font-size: var(--font-size-base);
   padding: 15px;
   min-height: 100vh;
+  padding-top: 30px;
 }
 
 h1,
@@ -60,7 +60,7 @@ h2 {
   display: flex;
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .coluna-esquerda,
